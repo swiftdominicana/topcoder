@@ -11,7 +11,29 @@ import SwiftUI
 struct TopCoderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          TabView {
+              CoderList()
+                  .tabItem {
+                      Image(systemName: "person.3")
+                      Text("Coders")
+                  }
+              Text("Repo List")
+                  .tabItem {
+                      Image(systemName: "list.dash")
+                      Text("Repositories")
+                  }
+              Text("Dashboard")
+                  .tabItem {
+                      Image(systemName: "chart.bar")
+                      Text("Dashboard")
+                  }
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+          }
+
         }
     }
 }
