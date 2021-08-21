@@ -35,8 +35,9 @@ struct CoderList: View {
             }
             .tint(Color.green)
             .buttonStyle(.borderedProminent)
-            .cornerRadius(5)
             .disabled(isFollowing(dev))
+            .buttonBorderShape(.capsule)
+            .controlSize(.small)
             .padding([.trailing], 5)
           }
         }

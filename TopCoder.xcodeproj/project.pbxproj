@@ -13,6 +13,8 @@
 		EE01E1DE26D045AA0038A6EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE01E1DD26D045AA0038A6EF /* Preview Assets.xcassets */; };
 		EE01E1E526D18A1B0038A6EF /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1E426D18A1B0038A6EF /* Developer.swift */; };
 		EE01E1E726D18AAC0038A6EF /* CoderProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1E626D18AAC0038A6EF /* CoderProfileImageView.swift */; };
+		EE01E1EA26D1A09A0038A6EF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1E926D1A09A0038A6EF /* DashboardView.swift */; };
+		EE01E1EF26D1A2D60038A6EF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1EE26D1A2D60038A6EF /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		EE01E1DD26D045AA0038A6EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE01E1E426D18A1B0038A6EF /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		EE01E1E626D18AAC0038A6EF /* CoderProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderProfileImageView.swift; sourceTree = "<group>"; };
+		EE01E1E926D1A09A0038A6EF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		EE01E1EE26D1A2D60038A6EF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,8 @@
 		EE01E1D526D045A90038A6EF /* TopCoder */ = {
 			isa = PBXGroup;
 			children = (
+				EE01E1EB26D1A2A50038A6EF /* Views */,
 				EE01E1E826D19D190038A6EF /* Models */,
-				EE01E1E626D18AAC0038A6EF /* CoderProfileImageView.swift */,
 				EE01E1D826D045A90038A6EF /* CoderList.swift */,
 				EE01E1D626D045A90038A6EF /* TopCoderApp.swift */,
 				EE01E1DA26D045AA0038A6EF /* Assets.xcassets */,
@@ -79,6 +83,24 @@
 				EE01E1E426D18A1B0038A6EF /* Developer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EE01E1EB26D1A2A50038A6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE01E1EC26D1A2B60038A6EF /* Common */,
+				EE01E1E926D1A09A0038A6EF /* DashboardView.swift */,
+				EE01E1EE26D1A2D60038A6EF /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE01E1EC26D1A2B60038A6EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE01E1E626D18AAC0038A6EF /* CoderProfileImageView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +175,9 @@
 			files = (
 				EE01E1E526D18A1B0038A6EF /* Developer.swift in Sources */,
 				EE01E1D926D045A90038A6EF /* CoderList.swift in Sources */,
+				EE01E1EA26D1A09A0038A6EF /* DashboardView.swift in Sources */,
 				EE01E1E726D18AAC0038A6EF /* CoderProfileImageView.swift in Sources */,
+				EE01E1EF26D1A2D60038A6EF /* CardView.swift in Sources */,
 				EE01E1D726D045A90038A6EF /* TopCoderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

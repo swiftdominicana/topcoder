@@ -27,10 +27,10 @@ struct TopCoderApp: App {
                       Image(systemName: "chart.bar")
                       Text("Dashboard")
                   }
-            Text("Profile")
+            CardView()
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
+                    Image(systemName: "paperplane")
+                    Text("Card")
                 }
           }
 
