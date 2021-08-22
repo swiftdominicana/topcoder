@@ -60,8 +60,10 @@ struct CoderList: View {
               .padding([.trailing], 5)
             }
             .onTapGesture {
-              developerSelected = dev
-              showModal = true
+              withAnimation(.easeInOut(duration: 0.4)) {
+                developerSelected = dev
+                showModal = true
+              }
             }
           }
           .swipeActions {
