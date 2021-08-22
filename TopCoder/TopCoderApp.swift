@@ -17,7 +17,7 @@ struct TopCoderApp: App {
                       Image(systemName: "person.3")
                       Text("Coders")
                   }
-              Text("Repo List")
+              RepositoriesView()
                   .tabItem {
                       Image(systemName: "list.dash")
                       Text("Repositories")

@@ -22,6 +22,7 @@ struct CoderList: View {
             CoderProfileImageView(imageURL: dev.imageURL)
             VStack(alignment: .leading) {
               Text(dev.name)
+                .lineLimit(1)
               HStack {
                 ForEach(0..<5) { i in
                   Image(systemName: dev.stars >= i ? "star.fill" : "star")
