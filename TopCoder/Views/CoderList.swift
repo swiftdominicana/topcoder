@@ -66,6 +66,8 @@ struct CoderList: View {
               }
             }
           }
+          .listRowSeparatorTint(Color.teal)
+          .listRowSeparator(.visible, edges: .all)
           .swipeActions {
             Button(
               role: .destructive,
@@ -98,7 +100,10 @@ struct CoderList: View {
           }
         }
         .zIndex(2)
+        .listSectionSeparator(.visible, edges: .all)
+        .listSectionSeparatorTint(Color.teal)
       }
+
       .navigationBarTitle("Top Coders")
       .searchable(text: $searchQuery, placement: .automatic)
     }
@@ -126,6 +131,7 @@ struct CoderList: View {
 struct CoderList_Previews: PreviewProvider {
   static var previews: some View {
     CoderList()
+      .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     // .previewInterfaceOrientation(.landscapeLeft)
   }
 }

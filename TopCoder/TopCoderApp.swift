@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct TopCoderApp: App {
+  let persistenceController = PersistenceController.shared
+  
   var body: some Scene {
     WindowGroup {
       TabView {
@@ -24,8 +26,8 @@ struct TopCoderApp: App {
           }
         CanvasView()
           .tabItem {
-            Image(systemName: "chart.bar")
-            Text("Dashboard")
+            Image(systemName: "hand.draw")
+            Text("Canvas")
           }
         CardView()
           .tabItem {
@@ -36,7 +38,7 @@ struct TopCoderApp: App {
       .onAppear {
         UITabBar.appearance().backgroundColor = UIColor.white
       }
-
+      .environment(\.managedObjectContext, persistenceController.container.viewContext)
     }
   }
 }
