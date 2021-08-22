@@ -14,13 +14,14 @@ struct DeveloperDetailView: View {
       VStack {
         CoderProfileImageView(imageURL: developer.imageURL)
         Text(developer.name)
+          .foregroundColor(.primary)
         HStack {
           ForEach(0..<5) { i in
             Image(systemName: developer.stars >= i ? "star.fill" : "star")
           }
         }
+        .foregroundColor(.secondary)
       }
-      .foregroundColor(.secondary)
       .padding()
     }
     .frame(maxWidth: 300, maxHeight: 200)
