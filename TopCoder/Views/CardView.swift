@@ -45,7 +45,8 @@ struct CardView: View {
         .offset(x: viewState.width, y: viewState.height)
         .onTapGesture {
           withAnimation(.spring(response: 1.5, dampingFraction: 0.9, blendDuration: 0)) {
-            self.showRecipient.toggle()
+            showRecipient.toggle()
+            focusedField = showRecipient ? .recipientField : .messageField
           }
         }
         VStack(spacing: 20) {
