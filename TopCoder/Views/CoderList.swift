@@ -61,6 +61,12 @@ struct CoderList: View {
             }
             .onTapGesture {
               withAnimation(.easeInOut(duration: 0.4)) {
+                guard !showModal else {
+                  showModal = false
+                  developerSelected = nil
+                  return
+                }
+
                 developerSelected = dev
                 showModal = true
               }
