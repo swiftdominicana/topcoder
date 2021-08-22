@@ -9,12 +9,13 @@ import SwiftUI
 
 struct CoderProfileImageView: View {
   let imageURL: URL?
-  
+
   var body: some View {
     AsyncImage(url: imageURL, transaction: Transaction(animation: .easeInOut)) { phase in
       switch phase {
       case .empty:
         Image(systemName: "person")
+          .frame(maxWidth: 40, maxHeight: 40)
       case .success(let image):
         image
           .resizable()
@@ -24,6 +25,7 @@ struct CoderProfileImageView: View {
           .transition(.scale(scale: 0.1, anchor: .center))
       case .failure:
         Image(systemName: "exclamationmark.icloud")
+          .frame(maxWidth: 40, maxHeight: 40)
       @unknown default:
         EmptyView()
       }
