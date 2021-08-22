@@ -22,7 +22,7 @@ struct TopCoderApp: App {
             Image(systemName: "list.dash")
             Text("Repositories")
           }
-        DeveloperDetailView(developer: Developer(id: 1, name: "Test Dev", stars: 3, imageURL: nil))
+        CanvasView()
           .tabItem {
             Image(systemName: "chart.bar")
             Text("Dashboard")

@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  TopCoder
+//  CoderList.swift
+//  CoderList
 //
 //  Created by Libranner Leonel Santos Espinal on 20/8/21.
 //
@@ -123,7 +123,7 @@ struct CoderList: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CoderList_Previews: PreviewProvider {
   static var previews: some View {
     CoderList()
     // .previewInterfaceOrientation(.landscapeLeft)

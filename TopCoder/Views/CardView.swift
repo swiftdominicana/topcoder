@@ -1,6 +1,6 @@
 //
-//  ProfileView.swift
-//  ProfileView
+//  CardView.swift
+//  CardView
 //
 //  Created by Libranner Leonel Santos Espinal on 21/8/21.
 //
@@ -112,7 +112,7 @@ struct CardView: View {
   }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
   static var previews: some View {
     CardView()
   }
