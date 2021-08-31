@@ -53,8 +53,8 @@ struct CardView: View {
           TextField("Message", text: $message)
             .focused($focusedField, equals: .messageField)
             .textFieldStyle(.roundedBorder)
-            .submitScope(message.count > 1)
             .onSubmit {
+              animateView(showRecipient: true)
               focusedField = .recipientField
             }
             .onTapGesture {
@@ -65,6 +65,7 @@ struct CardView: View {
             .focused($focusedField, equals: .recipientField)
             .textFieldStyle(.roundedBorder)
             .onSubmit {
+              animateView(showRecipient: false)
               focusedField = .messageField
             }
             .onTapGesture {
