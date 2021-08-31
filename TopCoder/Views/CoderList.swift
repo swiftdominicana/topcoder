@@ -19,15 +19,15 @@ struct CoderList: View {
     NavigationView {
       ZStack(alignment: .top) {
         if let dev = developerSelected {
-        DeveloperDetailView(developer: dev)
-          .zIndex(3)
-          .opacity(showModal ? 1 : 0)
-          .onTapGesture {
-            withAnimation {
-              developerSelected = nil
-              showModal = false
+          DeveloperDetailView(developer: dev)
+            .zIndex(3)
+            .opacity(showModal ? 1 : 0)
+            .onTapGesture {
+              withAnimation {
+                developerSelected = nil
+                showModal = false
+              }
             }
-          }
         }
         List(searchResults) { dev in
           VStack(alignment: .leading) {
@@ -137,7 +137,6 @@ struct CoderList: View {
 struct CoderList_Previews: PreviewProvider {
   static var previews: some View {
     CoderList()
-      .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     // .previewInterfaceOrientation(.landscapeLeft)
   }
 }

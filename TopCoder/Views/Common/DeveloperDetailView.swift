@@ -34,5 +34,6 @@ struct DeveloperDetailView: View {
 struct DeveloperDetailView_Previews: PreviewProvider {
   static var previews: some View {
     DeveloperDetailView(developer: Developer(id: 1, name: "Test Dev", stars: 3, imageURL: nil))
+      .preferredColorScheme(.dark)
   }
 }

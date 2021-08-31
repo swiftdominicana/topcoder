@@ -32,3 +32,10 @@ struct CoderProfileImageView: View {
     }
   }
 }
+
+struct CoderProfileImageView_Previews: PreviewProvider {
+  static var previews: some View {
+    let url = Developer.dummyData.first!.imageURL
+    return CoderProfileImageView(imageURL: url)
+  }
+}
