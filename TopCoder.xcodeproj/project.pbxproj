@@ -18,8 +18,6 @@
 		EE01E1F126D1C2550038A6EF /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1F026D1C2550038A6EF /* RepositoriesView.swift */; };
 		EE01E1F326D1C3180038A6EF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1F226D1C3180038A6EF /* Repository.swift */; };
 		EE01E1F526D259C60038A6EF /* DeveloperDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1F426D259C60038A6EF /* DeveloperDetailView.swift */; };
-		EE01E1F926D2BD720038A6EF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1F826D2BD720038A6EF /* Persistence.swift */; };
-		EE01E1FC26D2BDCC0038A6EF /* TopCoder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE01E1FA26D2BDCC0038A6EF /* TopCoder.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +33,6 @@
 		EE01E1F026D1C2550038A6EF /* RepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
 		EE01E1F226D1C3180038A6EF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EE01E1F426D259C60038A6EF /* DeveloperDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailView.swift; sourceTree = "<group>"; };
-		EE01E1F826D2BD720038A6EF /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		EE01E1FB26D2BDCC0038A6EF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +67,9 @@
 			children = (
 				EE01E1E826D19D190038A6EF /* Models */,
 				EE01E1EB26D1A2A50038A6EF /* Views */,
-				EE01E1F826D2BD720038A6EF /* Persistence.swift */,
 				EE01E1D626D045A90038A6EF /* TopCoderApp.swift */,
 				EE01E1DA26D045AA0038A6EF /* Assets.xcassets */,
 				EE01E1DC26D045AA0038A6EF /* Preview Content */,
-				EE01E1FA26D2BDCC0038A6EF /* TopCoder.xcdatamodeld */,
 			);
 			path = TopCoder;
 			sourceTree = "<group>";
@@ -197,8 +191,6 @@
 				EE01E1EF26D1A2D60038A6EF /* CardView.swift in Sources */,
 				EE01E1D726D045A90038A6EF /* TopCoderApp.swift in Sources */,
 				EE01E1F526D259C60038A6EF /* DeveloperDetailView.swift in Sources */,
-				EE01E1FC26D2BDCC0038A6EF /* TopCoder.xcdatamodeld in Sources */,
-				EE01E1F926D2BD720038A6EF /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,19 +395,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EE01E1FA26D2BDCC0038A6EF /* TopCoder.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EE01E1FB26D2BDCC0038A6EF /* Model.xcdatamodel */,
-			);
-			currentVersion = EE01E1FB26D2BDCC0038A6EF /* Model.xcdatamodel */;
-			path = TopCoder.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EE01E1CB26D045A90038A6EF /* Project object */;
 }
